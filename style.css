@@ -13,7 +13,7 @@ body{
 #search-bar{
     border: none;
     border-radius: 1rem;
-    width: 33vw;
+    width: 100%;
     margin: 10px;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@ body{
     border-radius: 1rem;
     text-align: center;
     background-color: rgb(82, 175, 206);
-    margin: 10px !important;
+    margin: 0px !important;
     padding: 0px 0px 0px 0px !important;
     justify-content: center;
     width: 80% !important;
@@ -36,18 +36,23 @@ body{
 
 .green{
     background-color: green;
+    border-radius: 1rem;
 }
 
 .yellow{
     background-color: yellow;
+    border-radius: 1rem;
 }
 
 .orange{
     background-color: orange;
+    border-radius: 1rem;
+
 }
 
 .red{
     background-color: red;
+    border-radius: 1rem;
 }
 
 .title{
@@ -71,7 +76,6 @@ li{
 }
 
 #search-button{
-    text-align: center;
     background-color: rgb(82, 175, 206);
     color: white;
     width: 30% !important;
@@ -79,6 +83,8 @@ li{
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
+    margin: 10px !important;
+    padding: 0px 0px !important;
 }
 
 #search-input{
@@ -90,7 +96,7 @@ li{
     color: rgb(46, 170, 253);
     text-align: center;
     background-color: white;
-    width: 33vw;
+    width: 100%;
     border: rgb(46, 170, 253) solid 2px;
     border-radius: 1rem;
     margin: 10px;
@@ -120,5 +126,22 @@ li{
 }
 
 #city-info{
+    padding: 0px !important;
+}
+
+#error{
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul{
+    padding-left: 0px !important;
+    padding-bottom: 7px !important;
+    margin: 0px !important;
+}
+
+.col-xl-6{
+    justify-content: center !important;
     padding: 0px !important;
 }

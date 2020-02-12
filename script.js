@@ -20,9 +20,6 @@ $(searchBtn).on("click", function () {
 // Event listener for the recent searche buttons
 $(document).on("click", ".recent-search-button", function () {
     var searchTerm = $(this).text()
-    if (searchTerm == "") {
-        return
-    }
     searchAPI(searchTerm)
     cityInfo.empty()
     fiveDayInfo.empty()
@@ -35,7 +32,11 @@ function searchAPI(city) {
     // User input for the city search
     // Returns function if the search is blank 
     if (city === "") {
+        $("#error").removeClass("hidden")
         return
+    }
+    else{
+        $("#error").addClass("hidden")
     }
     cityInfoContainer.removeClass("hidden")
 
@@ -141,7 +142,7 @@ $.ajax({
     for (i = 0; i < 40; i += 8) {
 
         // Creates the card for the forcast stats
-        var card = $("<div>").addClass("container")
+        var card = $("<div>").addClass("container col")
 
         // Creates an unordered list
         var list = $("<ul>")

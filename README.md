@@ -1,5 +1,7 @@
 # Weather-App
 
+A simple that can deliver the weather for the week by looking up a city.
+
 ## Features
 
 ### Main page
